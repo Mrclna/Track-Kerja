@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jejak Kerja</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <h1>Jejak Kerja</h1>
+      <p id="todayLbl"></p>
+    </div>
+    <button class="btn primary" data-act="newTask" type="button">+ Task baru</button>
+  </header>
+  <nav class="tabs" role="tablist" aria-label="Tampilan">
+    <button class="tab" role="tab" data-act="tab" data-v="ringkas" id="tab-home" type="button">Ringkas</button>
+    <button class="tab" role="tab" data-act="tab" data-v="daftar" id="tab-list" type="button">Daftar</button>
+    <button class="tab" role="tab" data-act="tab" data-v="kalender" id="tab-cal" type="button">Kalender</button>
+  </nav>
+  <div id="banner"></div>
+  <main id="view"></main>
+</div>
+<div id="modalRoot"></div>
+<div id="toast" role="status" hidden></div>
+
+<script src="app.js"></script>
+</body>
+</html>
